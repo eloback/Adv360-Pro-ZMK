@@ -73,5 +73,15 @@
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
+
+        symbols_layer {
+            bindings = <
+&none  &kp EXCL   &kp AT        &kp HASH          &kp DOLLAR  &kp PERCENT  &none                                      &none        &kp CARET  &kp AMPERSAND         &kp STAR               &none      &none       &none
+&none  &kp HASH   &kp LT        &kp GREATER_THAN  &kp EXCL    &none        &none                                      &none        &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE  &none       &none
+&none  &kp CARET  &kp MINUS     &kp PLUS          &kp EQUAL   &kp PERCENT  &none  &none  &none      &none  &none      &none        &none      &kp LBKT              &kp RBKT               &kp AT     &kp DOLLAR  &none
+&none  &kp BSLH   &kp ASTERISK  &kp PIPE          &kp AMPS    &kp TILDE                  &none      &none                          &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &kp FSLH    &none
+&none  &none      &none         &none             &none                    &none  &none  &none      &none  &kp UNDER  &key_repeat             &kp LESS_THAN         &kp GREATER_THAN       &none      &none       &none
+            >;
+        };
     };
 };
