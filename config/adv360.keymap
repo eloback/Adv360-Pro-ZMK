@@ -32,15 +32,6 @@
         };
     };
 
-    macros {
-        CMD_UNDO: CMD_UNDO {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <>;
-            label = "CMD_UNDO";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
