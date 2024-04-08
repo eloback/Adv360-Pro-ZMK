@@ -38,9 +38,9 @@
             bindings = <
 &kp EQUAL  &kp N1             &kp N2          &kp N3             &kp N4            &kp N5  &none                                                                    &none      &kp N6  &kp N7             &kp N8           &kp N9           &kp N0          &kp MINUS
 &none      &kp Q              &kp W           &kp E              &kp R             &kp T   &none                                                                    &none      &kp Y   &kp U              &kp I            &kp O            &kp P           &kp BSLH
-&kp TAB    &hm LCTRL A        &hm LEFT_ALT S  &hm LEFT_GUI D     &hm LEFT_SHIFT F  &kp G   &none        &none      &kp PRINTSCREEN      &none      &none            &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm LCTRL SEMI  &kp SQT
-&none      &kp Z              &kp X           &kp C              &kp V             &kp B                           &kp HOME             &kp PG_UP                              &kp N   &kp M              &kp COMMA        &kp DOT          &kp FSLH        &none
-&mo 1      &kp LS(LG(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &lt 3 ENTER  &lt 5 ESC  &kp END              &kp PG_DN  &lt 4 BACKSPACE  &kp SPACE          &kp C_PREV         &kp C_NEXT       &kp LBKT         &kp RBKT        &mo 1
+&kp TAB    &hm LCTRL A        &hm LEFT_ALT S  &hm LEFT_GUI D     &hm LEFT_SHIFT F  &kp G   &none            &none      &kp PRINTSCREEN      &none      &none        &none      &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm LCTRL SEMI  &kp SQT
+&none      &kp Z              &kp X           &kp C              &kp V             &kp B                               &kp HOME             &kp PG_UP                          &kp N   &kp M              &kp COMMA        &kp DOT          &kp FSLH        &none
+&mo 1      &kp LS(LG(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &lt 3 BACKSPACE  &lt 5 ESC  &kp END              &kp PG_DN  &lt 4 ENTER  &kp SPACE          &kp C_PREV         &kp C_NEXT       &kp LBKT         &kp RBKT        &mo 1
             >;
         };
 
