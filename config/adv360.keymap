@@ -36,11 +36,11 @@
 
         default_layer {
             bindings = <
-&none    &kp N1             &kp N2          &kp N3             &kp N4            &kp N5  &mo 2                                                                    &mo 2              &kp N6  &kp N7             &kp N8           &kp N9           &kp N0          &kp MINUS
-&none    &kp Q              &kp W           &kp E              &kp R             &kp T   &mt LC(C) LC(X)                                                          &kp RA(RC(RG(S)))  &kp Y   &kp U              &kp I            &kp O            &kp P           &kp BSLH
-&kp TAB  &hm LCTRL A        &hm LEFT_ALT S  &hm LEFT_GUI D     &hm LEFT_SHIFT F  &kp G   &kp LC(V)        &none      &kp PRINTSCREEN      &none      &none        &none              &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm LCTRL SEMI  &kp SQT
-&none    &kp Z              &kp X           &kp C              &kp V             &kp B                               &kp HOME             &kp PG_UP                                  &kp N   &kp M              &kp COMMA        &kp DOT          &kp FSLH        &none
-&mo 1    &kp LS(LA(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &lt 3 BACKSPACE  &lt 5 ESC  &kp END              &kp PG_DN  &lt 4 ENTER  &kp SPACE                  &kp C_PREV         &kp C_NEXT       &kp LBKT         &kp RBKT        &mo 1
+&none    &kp N1             &kp N2          &kp N3             &kp N4            &kp N5  &mo 2                                                                    &mo 2              &kp N6  &kp N7             &kp N8           &kp N9           &kp N0          &none
+&none    &kp Q              &kp W           &kp E              &kp R             &kp T   &mt LC(C) LC(X)                                                          &kp RA(RC(RG(S)))  &kp Y   &kp U              &kp I            &kp O            &kp P           &none
+&kp TAB  &hm LCTRL A        &hm LEFT_ALT S  &hm LEFT_GUI D     &hm LEFT_SHIFT F  &kp G   &kp LC(V)        &none      &kp PRINTSCREEN      &none      &none        &none              &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm LCTRL SEMI  &none
+&none    &kp Z              &kp X           &kp C              &kp V             &kp B                               &kp HOME             &kp PG_UP                                  &kp N   &kp M              &kp COMMA        &kp DOT          &kp SQT         &none
+&mo 1    &kp LS(LA(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &lt 3 BACKSPACE  &lt 5 ESC  &kp END              &kp PG_DN  &lt 4 ENTER  &kp SPACE                  &kp C_PREV         &kp C_NEXT       &none            &none           &mo 1
             >;
         };
 
@@ -66,11 +66,11 @@
 
         symbols_layer {
             bindings = <
-&none  &kp EXCL   &kp AT        &kp HASH          &kp DOLLAR  &kp PERCENT  &none                                      &none        &kp CARET  &kp AMPERSAND         &kp STAR               &none      &none       &none
-&none  &kp HASH   &kp LT        &kp GREATER_THAN  &kp EXCL    &none        &none                                      &none        &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE  &none       &none
-&none  &kp CARET  &kp MINUS     &kp PLUS          &kp EQUAL   &kp PERCENT  &none  &none  &none      &none  &none      &none        &none      &kp LBKT              &kp RBKT               &kp AT     &kp DOLLAR  &none
-&none  &kp FSLH   &kp ASTERISK  &kp PIPE          &kp AMPS    &kp TILDE                  &none      &none                          &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &kp BSLH    &none
-&none  &none      &none         &none             &none                    &none  &none  &none      &none  &kp UNDER  &key_repeat             &kp LESS_THAN         &kp GREATER_THAN       &none      &none       &none
+&none  &trans     &trans        &kp HASH      &kp DOLLAR  &kp PERCENT  &none                                      &none        &kp CARET  &kp AMPERSAND         &kp STAR               &none  &none       &none
+&none  &kp HASH   &kp EXCL      &kp QUESTION  &kp AT      &kp GRAVE    &none                                      &none        &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none       &none
+&none  &kp CARET  &kp MINUS     &kp PLUS      &kp EQUAL   &kp PERCENT  &none  &none  &none      &none  &none      &none        &none      &kp LBKT              &kp RBKT               &none  &kp DOLLAR  &none
+&none  &kp FSLH   &kp ASTERISK  &kp PIPE      &kp AMPS    &kp TILDE                  &none      &none                          &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &kp BSLH    &none
+&none  &none      &none         &none         &none                    &none  &none  &none      &none  &kp UNDER  &key_repeat             &kp LESS_THAN         &kp GREATER_THAN       &none  &none       &none
             >;
         };
 
@@ -86,11 +86,11 @@
 
         numpad_layer {
             bindings = <
-&trans  &trans    &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &kp N7  &kp N8  &kp N9  &trans  &trans                                      &trans  &trans  &none   &none   &none   &trans  &trans
-&trans  &kp LGUI  &kp N4  &kp N5  &kp N6  &kp N0  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &none   &none   &none   &trans  &trans
-&trans  &trans    &kp N1  &kp N2  &kp N3  &trans                  &trans      &trans                  &trans  &none   &none   &none   &trans  &trans
-&trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &none           &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans  &trans  &trans  &trans              &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &kp N7  &kp N8  &kp N9  &mt PLUS MINUS      &trans                                      &trans  &trans  &none   &none   &none   &trans  &trans
+&trans  &kp LGUI  &kp N4  &kp N5  &kp N6  &kp N0              &trans  &trans  &trans      &trans  &trans  &trans  &trans  &none   &none   &none   &trans  &trans
+&trans  &trans    &kp N1  &kp N2  &kp N3  &mt ASTERISK SLASH                  &trans      &trans                  &trans  &none   &none   &none   &trans  &trans
+&trans  &trans    &trans  &trans  &trans                      &trans  &trans  &trans      &trans  &trans  &none           &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
