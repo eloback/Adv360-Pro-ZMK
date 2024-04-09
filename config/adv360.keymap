@@ -13,6 +13,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -28,6 +29,143 @@
             quick_tap_ms = <175>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+        };
+
+        slashes: slashes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASHES";
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        slash_pipe: slash_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_PIPE";
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+            bindings = <&slashes>, <&kp PIPE>;
+        };
+
+        plus_minus: plus_minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PLUS_MINUS";
+            bindings = <&kt PLUS>, <&kt MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        vim_start_end: vim_start_end {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_START_END";
+            bindings = <&kp LCTRL>, <&kp DOLLAR>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        at_slash: at_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AT_SLASH";
+            bindings = <&kp AT>, <&kp HASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        question_exclamation: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUESTION_EXCLAMATION";
+            bindings = <&kp QUESTION>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        math_operators: math_operators {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MATH_OPERATORS";
+            bindings = <&kp EQUAL>, <&kp PERCENT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        and: and {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AND";
+            bindings = <&kp ASTERISK>, <&kp AMPERSAND>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        brackets: brackets {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACKETS";
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        braces: braces {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACES";
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        parenthesis: parenthesis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PARENTHESIS";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        compare: compare {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMPARE";
+            bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        brackes: brackes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BRACKES";
+            bindings = <&brackets>, <&braces>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        all_math_shit: all_math_shit {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALL_MATH_SHIT";
+            bindings = <&parenthesis>, <&compare>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+
+        portuguese_1: portuguese_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PORTUGUESE_1";
+            bindings = <&kt TILDE>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -66,11 +204,11 @@
 
         symbols_layer {
             bindings = <
-&none  &trans     &trans        &kp HASH      &kp DOLLAR  &kp PERCENT  &none                                      &none        &kp CARET  &kp AMPERSAND         &kp STAR               &none  &none       &none
-&none  &kp HASH   &kp EXCL      &kp QUESTION  &kp AT      &kp GRAVE    &none                                      &none        &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &none       &none
-&none  &kp CARET  &kp MINUS     &kp PLUS      &kp EQUAL   &kp PERCENT  &none  &none  &none      &none  &none      &none        &none      &kp LBKT              &kp RBKT               &none  &kp DOLLAR  &none
-&none  &kp FSLH   &kp ASTERISK  &kp PIPE      &kp AMPS    &kp TILDE                  &none      &none                          &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &kp BSLH    &none
-&none  &none      &none         &none         &none                    &none  &none  &none      &none  &kp UNDER  &key_repeat             &kp LESS_THAN         &kp GREATER_THAN       &none  &none       &none
+&none  &trans     &trans        &kp HASH      &kp DOLLAR  &kp PERCENT  &none                                      &none        &kp CARET       &kp AMPERSAND  &kp STAR               &none  &none           &none
+&none  &kp HASH   &kp EXCL      &kp QUESTION  &kp AT      &kp GRAVE    &none                                      &none        &all_math_shit  &at_slash      &question_exclamation  &none  &none           &none
+&none  &kp CARET  &kp MINUS     &kp PLUS      &kp EQUAL   &kp PERCENT  &none  &none  &none      &none  &none      &none        &brackes        &slashes       &kp RBKT               &none  &vim_start_end  &none
+&none  &kp FSLH   &kp NUMBER_1  &kp PIPE      &kp AMPS    &kp TILDE                  &none      &none                          &trans          &and           &kp RIGHT_PARENTHESIS  &none  &kp BSLH        &none
+&none  &none      &none         &none         &none                    &none  &none  &none      &none  &kp UNDER  &key_repeat                  &kp LESS_THAN  &kp GREATER_THAN       &none  &none           &none
             >;
         };
 
