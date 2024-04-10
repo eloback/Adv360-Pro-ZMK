@@ -81,7 +81,7 @@
 &none  &kp Q              &kp W           &kp E              &kp R             &kp T   &mt LC(C) LC(X)                                                               &kp RA(RC(RG(S)))  &kp Y   &kp U              &kp I        &kp O            &kp P          &none
 &none  &hm LEFT_GUI A     &hm LEFT_ALT S  &hm LCTRL D        &hm LEFT_SHIFT F  &kp G   &kp LC(V)        &none      &kp PRINTSCREEN      &none       &none            &none              &kp H   &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RGUI SEMI  &none
 &none  &lt 5 Z            &kp X           &kp C              &kp V             &kp B                               &none                &none                                           &kp N   &kp M              &kp COMMA    &kp DOT          &kp SLASH      &none
-&mo 1  &kp LS(LA(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kt SPACE        &lt 3 ESC  &kp TAB              &kp DELETE  &lt 4 BACKSPACE  &msl 4 ENTER               &kp C_PREV         &kp C_NEXT   &none            &none          &mo 1
+&mo 1  &kp LS(LA(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kp SPACE        &lt 3 ESC  &kp TAB              &kp DELETE  &lt 4 BACKSPACE  &msl 4 ENTER               &kp C_PREV         &kp C_NEXT   &none            &none          &mo 1
             >;
         };
 
