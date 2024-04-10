@@ -32,43 +32,14 @@
             bindings = <&kp>, <&kp>;
         };
 
-        miryoku_numpad: miryoku_numpad {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MIRYOKU_NUMPAD";
-            bindings = <&kp PERIOD>, <&kp LEFT_PARENTHESIS>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        msl: msl {
-            compatible = "zmk,behavior-hold-tap";
-            label = "mod_shift_layer";
-            bindings = <&shift_layer>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-        };
-    };
-
-    macros {
-        shift_layer: lm {
-            compatible = "zmk,behavior-macro-one-param";
+        shiftm: shiftm {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SHIFT_MODIFER";
+            bindings = <&kt>;
             #binding-cells = <1>;
-            bindings =
-                <&macro_param_1to1>,
-                <&macro_press>,
-                <&mo MACRO_PLACEHOLDER>,
-                <&macro_press>,
-                <&kp LSHIFT>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT &macro_param_1to1>,
-                <&macro_release>,
-                <&mo MACRO_PLACEHOLDER>;
-
-            label = "LM";
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
         };
     };
 
@@ -76,43 +47,13 @@
         compatible = "zmk,combos";
 
         combo_shift_right {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&shiftm LEFT_SHIFT>;
             key-positions = <42 43>;
-        };
-
-        combo_control_right {
-            bindings = <&sk LCTRL>;
-            key-positions = <42 43>;
-        };
-
-        combo_alt_right {
-            bindings = <&sk LEFT_ALT>;
-            key-positions = <41 43>;
-        };
-
-        combo_gui_right {
-            bindings = <&sk LGUI>;
-            key-positions = <44 43>;
         };
 
         combo_shift_left {
-            bindings = <&sk LEFT_SHIFT>;
+            bindings = <&shiftm LEFT_SHIFT>;
             key-positions = <31 32>;
-        };
-
-        combo_control_left {
-            bindings = <&sk LCTRL>;
-            key-positions = <31 30>;
-        };
-
-        combo_alt_left {
-            bindings = <&sk LEFT_ALT>;
-            key-positions = <30 32>;
-        };
-
-        combo_gui_left {
-            bindings = <&sk LGUI>;
-            key-positions = <29 30>;
         };
     };
 
