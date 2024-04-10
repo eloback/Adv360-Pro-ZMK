@@ -78,21 +78,25 @@
         shift_combo {
             bindings = <&kt LSHIFT>;
             key-positions = <32 31 41 42>;
+            layers = <0 4 5 3>;
         };
 
         ctrl_combo {
             bindings = <&sk LCTRL>;
             key-positions = <31 30 42 43>;
+            layers = <0 3 4 5>;
         };
 
         alt_combo {
             bindings = <&sk LEFT_ALT>;
             key-positions = <32 30 41 43>;
+            layers = <0 3 4 5>;
         };
 
         gui_combo {
             bindings = <&sk LGUI>;
             key-positions = <30 29 44 43>;
+            layers = <0 3 4 5>;
         };
     };
 
