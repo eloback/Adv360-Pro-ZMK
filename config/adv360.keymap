@@ -48,12 +48,12 @@
 
         combo_shift_right {
             bindings = <&shiftm LEFT_SHIFT>;
-            key-positions = <>;
+            key-positions = <41 70>;
         };
 
         combo_shift_left {
             bindings = <&shiftm LEFT_SHIFT>;
-            key-positions = <>;
+            key-positions = <69 41>;
         };
     };
 
@@ -112,21 +112,21 @@
 
         button {
             bindings = <
-&trans  &trans    &trans           &trans     &trans     &trans     &trans                                             &trans  &trans  &trans               &trans  &trans  &trans  &trans
-&trans  &trans    &mt LC(X) LC(C)  &kp LC(Z)  &kp LC(Y)  &kp LC(V)  &trans                                             &trans  &trans  &trans               &trans  &trans  &trans  &trans
-&trans  &kp LGUI  &kp LALT         &kp LCTRL  &kp LSHFT  &trans     &trans    &trans    &trans         &trans  &trans  &trans  &trans  &shiftm RIGHT_SHIFT  &trans  &trans  &trans  &trans
-&trans  &trans    &trans           &trans     &trans     &trans                         &trans         &trans                  &trans  &trans               &trans  &trans  &trans  &trans
-&trans  &trans    &trans           &trans     &trans                &mkp MB1  &mkp MB2  &mkp MCLK      &trans  &trans  &trans          &trans               &trans  &trans  &trans  &trans
+&trans  &trans    &trans           &trans     &trans     &trans     &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &mt LC(X) LC(C)  &kp LC(Z)  &kp LC(Y)  &kp LC(V)  &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI  &kp LALT         &kp LCTRL  &kp LSHFT  &trans     &trans    &trans    &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans           &trans     &trans     &trans                         &trans         &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans           &trans     &trans                &mkp MB1  &mkp MB2  &mkp MCLK      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         symbols {
             bindings = <
-&trans  &trans                  &trans               &trans             &trans                &trans           &trans                                                                           &trans  &trans  &trans               &trans         &trans            &trans        &trans
-&trans  &kp LEFT_BRACE          &kp AMPERSAND        &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &trans                                                                           &trans  &trans  &trans               &trans         &trans            &trans        &trans
-&trans  &hm LGUI DOUBLE_QUOTES  &hm LEFT_ALT DOLLAR  &hm LCTRL PERCENT  &hm LEFT_SHIFT CARET  &kp PLUS         &trans                &trans                 &trans              &trans  &trans  &trans  &trans  &shiftm RIGHT_SHIFT  &trans         &trans            &kp COLON     &trans
-&trans  &kp TILDE               &kp EXCLAMATION      &kp AT_SIGN        &kp HASH              &kp PIPE                                                      &trans              &trans                  &trans  &trans               &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
-&trans  &trans                  &trans               &trans             &trans                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE      &trans  &trans  &trans          &trans               &trans         &trans            &trans        &trans
+&trans  &trans                  &trans               &trans             &trans                &trans           &trans                                                                           &trans  &trans  &trans  &trans         &trans            &trans        &trans
+&trans  &kp LEFT_BRACE          &kp AMPERSAND        &kp STAR           &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &trans                                                                           &trans  &trans  &trans  &trans         &trans            &trans        &trans
+&trans  &hm LGUI DOUBLE_QUOTES  &hm LEFT_ALT DOLLAR  &hm LCTRL PERCENT  &hm LEFT_SHIFT CARET  &kp PLUS         &trans                &trans                 &trans              &trans  &trans  &trans  &trans  &trans  &trans         &trans            &kp COLON     &trans
+&trans  &kp TILDE               &kp EXCLAMATION      &kp AT_SIGN        &kp HASH              &kp PIPE                                                      &trans              &trans                  &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &trans
+&trans  &trans                  &trans               &trans             &trans                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE      &trans  &trans  &trans          &trans  &trans         &trans            &trans        &trans
             >;
         };
     };
