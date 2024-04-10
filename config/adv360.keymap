@@ -35,7 +35,7 @@
         shiftm: shiftm {
             compatible = "zmk,behavior-sticky-key";
             label = "SHIFT_MODIFER";
-            bindings = <&kt>;
+            bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <1000>;
             quick-release;
@@ -48,7 +48,7 @@
 
         combo_shift_right {
             bindings = <&shiftm LEFT_SHIFT>;
-            key-positions = <42 43>;
+            key-positions = <42 41>;
         };
 
         combo_shift_left {
