@@ -142,11 +142,11 @@
 
         smartnumpad {
             bindings = <
-&none  &none       &none   &none   &none   &none      &none                                  &none  &none  &none      &none     &none     &none       &none
-&none  &kp CARET   &kp N7  &kp N8  &kp N9  &kp N0     &none                                  &none  &none  &trans     &kp FSLH  &kp BSLH  &kp DOLLAR  &none
-&none  &hmsk LGUI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &none  &none  &none      &none  &none  &none  &none  &kp APOS   &kp LBKT  &kp RBKT  &trans      &none
-&none  &none       &kp N1  &kp N2  &kp N3  &kp MINUS                &none      &none                &none  &kp GRAVE  &none     &trans    &trans      &none
-&none  &none       &none   &none   &none              &none  &none  &none      &none  &none  &none         &none      &none     &none     &none       &none
+&none  &none       &none   &none   &none   &none      &none                                  &none   &none  &none      &none     &none     &none       &none
+&none  &kp CARET   &kp N7  &kp N8  &kp N9  &kp N0     &none                                  &none   &none  &trans     &kp FSLH  &kp BSLH  &kp DOLLAR  &none
+&none  &hmsk LGUI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &none  &none  &none      &none  &none  &none   &none  &kp APOS   &kp LBKT  &kp RBKT  &trans      &none
+&none  &none       &kp N1  &kp N2  &kp N3  &kp MINUS                &none      &none                 &none  &kp GRAVE  &none     &trans    &trans      &none
+&none  &none       &none   &none   &none              &none  &none  &none      &none  &none  &trans         &none      &none     &none     &none       &none
             >;
         };
     };
