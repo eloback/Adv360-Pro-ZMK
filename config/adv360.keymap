@@ -58,21 +58,25 @@
         escape_left {
             bindings = <&kp ESCAPE>;
             key-positions = <31 33>;
+            layers = <0 7>;
         };
 
         escape_right {
             bindings = <&kp ESCAPE>;
             key-positions = <40 42>;
+            layers = <0 7>;
         };
 
         combo_tab_left {
             bindings = <&kp TAB>;
             key-positions = <17 18>;
+            layers = <0 7>;
         };
 
         combo_tab_right {
             bindings = <&kp TAB>;
             key-positions = <23 24>;
+            layers = <0 7>;
         };
     };
 
@@ -149,7 +153,7 @@
         layer_mod {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &to 8         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &trans        &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
@@ -203,6 +207,16 @@
 &none  &hmsk LGUI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &none  &none  &none      &none  &none   &none   &none  &hm RCTRL SQT  &hm RSHFT LEFT_BRACKET  &hm RIGHT_ALT RIGHT_BRACKET  &trans      &none
 &none  &none       &kp N1  &kp N2  &kp N3  &kp MINUS                &none      &none                  &none  &kp GRAVE      &trans                  &trans                       &trans      &none
 &none  &none       &none   &none   &none              &none  &none  &none      &none  &trans  &trans         &none          &none                   &none                        &none       &none
+            >;
+        };
+
+        no_hm_default {
+            bindings = <
+&to 0     &none              &none     &none              &none            &none  &mo 2                                                                                       &mo 2              &none  &none       &none       &none    &none      &none
+&none     &kp Q              &kp W     &kp E              &kp R            &kp T  &mt LC(C) LC(X)                                                                             &kp RA(RC(RG(S)))  &kp Y  &kp U       &kp I       &kp O    &kp P      &none
+&kp LGUI  &kp A              &kp S     &kp D              &kp F            &kp G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none              &kp H  &kp J       &kp K       &kp L    &kp SEMI   &none
+&none     &kp Z              &kp X     &kp C              &kp V            &kp B                                            &none                &kp DELETE                                      &kp N  &kp M       &kp COMMA   &kp DOT  &kp SLASH  &none
+&mo 1     &kp LS(LA(LCTRL))  &kp C_PP  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP         &lt 7 SPACE      &lt 7 ENTER              &kp TAB              &caps_word  &lt 3 BACKSPACE  &hmsk RIGHT_SHIFT         &kp C_PREV  &kp C_NEXT  &none    &none      &mo 1
             >;
         };
     };
