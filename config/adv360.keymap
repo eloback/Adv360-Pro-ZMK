@@ -48,7 +48,7 @@
             #binding-cells = <0>;
             bindings = <&cpf1>, <&cpf2>, <&cpf3>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <300>;
         };
     };
 
@@ -93,10 +93,7 @@
         cpf1: cpf1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_wait_time 150>,
-                <&kp N0 &kp N5 &kp N5 &kp N7 &kp N7 &kp N8 &kp N8 &kp N9 &kp N9 &kp N4 &kp N4>;
-
+            bindings = <&kp N0 &kp N5 &kp N5 &kp N7 &kp N7 &kp N8 &kp N8 &kp N9 &kp N9 &kp N4 &kp N4>;
             label = "CPF1";
             tap-ms = <10>;
             wait-ms = <10>;
@@ -105,10 +102,7 @@
         cpf2: cpf2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_wait_time 100>,
-                <&kp N5 &kp N5 &kp N2 &kp N6 &kp N1 &kp N8 &kp N7 &kp N6 &kp N1 &kp N6 &kp N8>;
-
+            bindings = <&kp N5 &kp N5 &kp N2 &kp N6 &kp N1 &kp N8 &kp N7 &kp N6 &kp N1 &kp N6 &kp N8>;
             label = "CPF2";
             tap-ms = <10>;
             wait-ms = <10>;
@@ -117,10 +111,7 @@
         cpf3: cpf3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_wait_time 100>,
-                <&kp N0 &kp N9 &kp N9 &kp N8 &kp N7 &kp N7 &kp N4 &kp N7 &kp N9 &kp N0 &kp N6>;
-
+            bindings = <&kp N0 &kp N9 &kp N9 &kp N8 &kp N7 &kp N7 &kp N4 &kp N7 &kp N9 &kp N0 &kp N6>;
             label = "CPF3";
             wait-ms = <10>;
             tap-ms = <10>;
