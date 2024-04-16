@@ -163,11 +163,11 @@
 
         button {
             bindings = <
-&trans  &trans    &trans           &trans     &trans     &trans     &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &mt LC(X) LC(C)  &kp LC(Z)  &kp LC(Y)  &kp LC(V)  &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LGUI  &kp LALT         &kp LCTRL  &kp LSHFT  &trans     &trans    &trans    &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans           &trans     &trans     &trans                         &trans         &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans    &trans           &trans     &trans                &mkp MB1  &mkp MB2  &mkp MCLK      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans           &trans     &trans  &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &kp LC(Z)        &kp LC(Y)  &trans  &trans                                             &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL        &kp LSHFT  &trans  &trans    &trans    &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &mt LC(X) LC(C)  &kp LC(V)  &trans                      &trans         &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans           &trans             &mkp MB1  &mkp MB2  &mkp MCLK      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
