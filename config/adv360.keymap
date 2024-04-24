@@ -193,11 +193,11 @@
 
         smartnumpad {
             bindings = <
-&none  &none       &none   &none   &none   &none      &none                                          &none   &none  &none          &none                   &none                        &none       &none
-&none  &kp CARET   &kp N7  &kp N8  &kp N9  &kp N0     &none                                          &none   &none  &trans         &kp FSLH                &kp BSLH                     &kp DOLLAR  &none
-&none  &hmsk LGUI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &none  &none  &none      &none  &none          &none   &none  &hm RCTRL SQT  &hm RSHFT LEFT_BRACKET  &hm RIGHT_ALT RIGHT_BRACKET  &trans      &none
-&none  &none       &kp N1  &kp N2  &kp N3  &kp MINUS                &none      &none                         &none  &kp GRAVE      &trans                  &trans                       &trans      &none
-&none  &none       &none   &none   &none              &none  &none  &none      &none  &kp BACKSPACE  &trans         &none          &none                   &none                        &none       &none
+&none  &none                 &none   &none   &none   &none       &none                                           &none   &none                 &none                  &none             &none              &none                 &none
+&none  &kp N0                &kp N7  &kp N8  &kp N9  &kp EQUAL   &none                                           &none   &kp CARET             &kp BACKSLASH          &kp SINGLE_QUOTE  &kp GRAVE          &kp DOLLAR            &none
+&none  &sk LSHIFT            &kp N4  &kp N5  &kp N6  &kp ESCAPE  &none   &none  &none      &none  &none          &none   &kp ESCAPE            &kp SPACE              &kp TAB           &kp ENTER          &sk RSHIFT            &none
+&none  &sk LS(LA(LC(LGUI)))  &kp N1  &kp N2  &kp N3  &kp MINUS                  &none      &none                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sk RS(RA(RC(RGUI)))  &none
+&none  &none                 &none   &none   &none               &trans  &none  &none      &none  &kp BACKSPACE  &trans                        &none                  &none             &none              &none                 &none
             >;
         };
 
