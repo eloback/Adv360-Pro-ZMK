@@ -80,11 +80,11 @@
     };
 
     macros {
-        email: email {
+        email1: email1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp E &kp D &kp U &kp A &kp R &kp D &kp O &kp L &kp L &kp O &kp B &kp A &kp C &kp K &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-            label = "EMAIL";
+            label = "EMAIL1";
             wait-ms = <10>;
             tap-ms = <10>;
         };
@@ -115,6 +115,24 @@
             wait-ms = <10>;
             tap-ms = <10>;
         };
+
+        cellphone1: cellphone1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp N4 &kp N7 &kp RPAR &kp SPACE &kp N9 &kp N9 &kp N6 &kp N7 &kp N1 &kp MINUS &kp N7 &kp N5 &kp N4 &kp N5>;
+            label = "CELLPHONE1";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+
+        git1: git1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp E &kp A &kp T &kp U &kp R &kp E>;
+            label = "GIT1";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
     };
 
     keymap {
@@ -122,51 +140,51 @@
 
         default_layer {
             bindings = <
-&none  &none                   &none           &none              &none            &none                   &mo 5                                                                                       &mo 5        &none                   &none        &none           &none              &none                       &none
-&none  &kp Q                   &kp W           &kp E              &kp R            &kp T                   &mt LC(X) LC(C)                                                                             &none        &kp Y                   &kp U        &kp I           &kp O              &kp P                       &none
-&none  &kp A                   &kp S           &kp D              &kp F            &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none        &hm RS(RA(RC(RGUI))) H  &kp J        &kp K           &kp L              &kp SEMICOLON               &none
-&none  &hm LS(LA(LC(LGUI))) Z  &hm LEFT_ALT X  &hm LGUI C         &hm LCTRL V      &kp B                                                             &none                &kp DELETE                                &kp N                   &hm RCTRL M  &hm RGUI COMMA  &hm RIGHT_ALT DOT  &hm RS(RA(RC(RGUI))) SLASH  &none
-&mo 4  &kp LS(LA(LCTRL))       &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &lt 1 SPACE      &lt 2 ENTER              &kp TAB              &caps_word  &lt 2 BACKSPACE  &lt 2 SPACE                          &kp C_PREV   &kp C_NEXT      &none              &none                       &mo 4
+&none  &none              &none           &none              &none            &none                   &mo 5                                                                                       &mo 5        &none                   &none        &none           &none              &none           &none
+&none  &kp Q              &kp W           &kp E              &kp R            &kp T                   &mt LC(X) LC(C)                                                                             &none        &kp Y                   &kp U        &kp I           &kp O              &kp P           &none
+&none  &kp A              &kp S           &kp D              &kp F            &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none        &hm RS(RA(RC(RGUI))) H  &kp J        &kp K           &kp L              &kp SEMICOLON   &none
+&none  &hm LGUI Z         &hm LEFT_ALT X  &hm LSHIFT C       &hm LCTRL V      &kp B                                                             &none                &kp DELETE                                &kp N                   &hm RCTRL M  &hm RGUI COMMA  &hm RIGHT_ALT DOT  &hm RGUI SLASH  &none
+&mo 4  &kp LS(LA(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &lt 1 SPACE      &lt 2 ENTER              &kp TAB              &caps_word  &lt 2 BACKSPACE  &lt 2 SPACE                          &kp C_PREV   &kp C_NEXT      &none              &none           &mo 4
             >;
         };
 
         smartnumpad {
             bindings = <
-&none  &none                 &none   &none   &none   &none       &none                                           &none   &none                  &none              &none             &none              &none                 &none
-&none  &kp N0                &kp N7  &kp N8  &kp N9  &kp EQUAL   &none                                           &none   &kp LEFT_PARENTHESIS   &kp CARET          &kp DOLLAR        &kp GRAVE          &kp BACKSLASH         &none
-&mo 4  &sk LSHIFT            &kp N4  &kp N5  &kp N6  &kp ESCAPE  &none   &none  &none      &none  &none          &none   &kp TAB                &kp SQT            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &sk RSHIFT            &none
-&none  &sk LS(LA(LC(LGUI)))  &kp N1  &kp N2  &kp N3  &kp MINUS                  &none      &none                         &kp RIGHT_PARENTHESIS  &sk RIGHT_CONTROL  &sk RGUI          &sk RIGHT_ALT      &sk RS(RA(RC(RGUI)))  &none
-&none  &none                 &none   &none   &none               &trans  &none  &none      &none  &kp BACKSPACE  &trans                         &none              &none             &none              &none                 &none
+&none  &none     &none   &none   &none   &none                 &none                                           &none       &none                  &none              &none             &none              &none       &none
+&none  &sl 3     &kp N7  &kp N8  &kp N9  &trans                &none                                           &none       &trans                 &kp GRAVE          &kp SLASH         &kp BACKSLASH      &kp ESCAPE  &none
+&mo 4  &kp N0    &kp N4  &kp N5  &kp N6  &kp EQUAL             &none   &none  &none      &none  &none          &none       &caps_word             &kp SQT            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS   &none
+&none  &sk LGUI  &kp N1  &kp N2  &kp N3  &kp LEFT_PARENTHESIS                 &none      &none                             &kp RIGHT_PARENTHESIS  &sk RIGHT_CONTROL  &sk RGUI          &sk RIGHT_ALT      &sk RGUI    &none
+&none  &none     &none   &none   &none                         &trans  &none  &none      &none  &kp BACKSPACE  &sk RSHIFT                         &none              &none             &none              &none       &none
             >;
         };
 
         navigation_layer {
             bindings = <
-&trans  &trans     &trans  &trans           &trans     &trans   &trans                                      &trans  &trans    &trans         &trans       &trans     &trans     &trans
-&trans  &sl 3      &trans  &kp LC(Z)        &kp LC(Y)  &trans   &trans                                      &trans  &trans    &kp HOME       &kp END      &trans     &trans     &trans
-&trans  &kp LC(B)  &trans  &trans           &kp ENTER  &kp ESC  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp LC(B)  &trans
-&trans  &trans     &trans  &mt LC(X) LC(C)  &kp LC(V)  &trans                   &trans      &trans                  &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans     &trans
-&trans  &trans     &trans  &trans           &trans              &trans  &trans  &trans      &trans  &trans  &trans            &trans         &trans       &trans     &trans     &trans
+&trans  &trans    &trans  &trans             &trans     &trans                &trans                                      &trans  &trans             &trans         &trans       &trans     &trans      &trans
+&trans  &sl 3     &trans  &kp LC(Z)          &kp LC(Y)  &trans                &trans                                      &trans  &kp LG(LS(LC(Y)))  &trans         &trans       &trans     &kp ESCAPE  &trans
+&trans  &kp HOME  &trans  &kp LS(LC(LG(D)))  &kp LC(B)  &sk LS(LA(LC(LGUI)))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT  &kp END     &trans
+&trans  &trans    &trans  &trans             &trans     &trans                                &trans      &trans                  &trans             &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans      &trans
+&trans  &trans    &trans  &trans             &trans                           &trans  &trans  &trans      &trans  &trans  &trans                     &trans         &trans       &trans     &trans      &trans
             >;
         };
 
         macro {
             bindings = <
-&to 0   &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &email  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &cpf    &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &email1      &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &to 0   &trans
+&trans  &trans  &trans  &cellphone1  &trans  &git1   &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &cpf         &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans       &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2                &kp F3    &kp F4                &kp F5                &kp F6  &trans                                      &mo 5   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans                &kp F7    &kp F8                &kp F9                &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans                &kp F4    &kp F5                &kp F6                &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &sk LS(LA(LC(LGUI)))  &kp F1    &kp F2                &kp F3                &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans                &kp CAPS  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans    &trans                &trans                &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7    &kp F8                &kp F9                &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4    &kp F5                &kp F6                &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1    &kp F2                &kp F3                &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp CAPS  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
