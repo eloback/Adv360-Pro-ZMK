@@ -160,11 +160,11 @@
 
         navigation_layer {
             bindings = <
-&trans  &trans    &trans  &trans             &trans     &trans                &trans                                      &trans  &trans             &trans         &trans       &trans     &trans      &trans
-&trans  &sl 3     &trans  &kp LC(Z)          &kp LC(Y)  &trans                &trans                                      &trans  &kp LG(LS(LC(Y)))  &trans         &trans       &trans     &kp ESCAPE  &trans
-&trans  &kp HOME  &sl 1   &kp LS(LC(LG(D)))  &kp LC(B)  &sk LS(LA(LC(LGUI)))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT  &kp END     &trans
-&trans  &trans    &trans  &trans             &trans     &trans                                &trans      &trans                  &trans             &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans      &trans
-&trans  &trans    &trans  &trans             &trans                           &trans  &trans  &trans      &trans  &trans  &trans                     &trans         &trans       &trans     &trans      &trans
+&trans  &trans    &trans         &trans         &trans     &trans                &trans                                      &trans  &trans             &trans         &trans       &trans     &trans      &trans
+&trans  &sl 3     &trans         &kp LC(Z)      &kp LC(Y)  &trans                &trans                                      &trans  &kp LG(LS(LC(Y)))  &trans         &trans       &trans     &kp ESCAPE  &trans
+&trans  &kp HOME  &kp LC(LG(S))  &kp LG(LC(D))  &kp LC(B)  &sk LS(LA(LC(LGUI)))  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT  &kp END     &trans
+&trans  &trans    &trans         &trans         &trans     &trans                                &trans      &trans                  &trans             &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans      &trans
+&trans  &trans    &trans         &trans         &trans                           &trans  &trans  &trans      &trans  &trans  &trans                     &trans         &trans       &trans     &trans      &trans
             >;
         };
 
