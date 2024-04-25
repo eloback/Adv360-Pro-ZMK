@@ -49,6 +49,24 @@
 
             tapping-term-ms = <300>;
         };
+
+        move_down: move_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOVE_DOWN";
+            bindings = <&kp LC(D)>, <&kp PAGE_DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        move_up: move_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOVE_UP";
+            bindings = <&kp LC(U)>, <&kp PAGE_UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
     };
 
     combos {
@@ -178,11 +196,11 @@
 
         navigation_layer {
             bindings = <
-&trans  &trans      &trans      &trans       &trans        &trans                &trans                                                 &trans  &trans             &trans         &trans       &trans     &trans     &trans
-&trans  &sl 3       &trans      &kp LC(Z)    &kp LC(Y)     &trans                &trans                                                 &trans  &kp LG(LS(LC(Y)))  &trans         &trans       &trans     &kp MINUS  &trans
-&trans  &hmsk LGUI  &hmsk LALT  &hmsk LCTRL  &hmsk LSHIFT  &sk LS(LA(LC(LGUI)))  &trans  &trans  &trans      &trans  &trans             &trans  &kp LEFT           &kp DOWN       &kp UP       &kp RIGHT  &kp LC(B)  &trans
-&trans  &kp ESC     &trans      &trans       &trans        &trans                                &trans      &trans                             &kp HOME           &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans     &trans
-&trans  &trans      &trans      &trans       &trans                              &trans  &trans  &trans      &trans  &kp LC(BACKSPACE)  &trans                     &trans         &trans       &trans     &trans     &trans
+&trans  &trans      &trans      &trans       &trans        &trans                &trans                                                 &trans  &trans             &trans      &trans    &trans     &trans     &trans
+&trans  &sl 3       &trans      &kp LC(Z)    &kp LC(Y)     &trans                &trans                                                 &trans  &kp LG(LS(LC(Y)))  &trans      &trans    &trans     &kp MINUS  &trans
+&trans  &hmsk LGUI  &hmsk LALT  &hmsk LCTRL  &hmsk LSHIFT  &sk LS(LA(LC(LGUI)))  &trans  &trans  &trans      &trans  &trans             &trans  &kp LEFT           &kp DOWN    &kp UP    &kp RIGHT  &kp LC(B)  &trans
+&trans  &kp ESC     &trans      &trans       &trans        &trans                                &trans      &trans                             &kp HOME           &move_down  &move_up  &kp END    &trans     &trans
+&trans  &trans      &trans      &trans       &trans                              &trans  &trans  &trans      &trans  &kp LC(BACKSPACE)  &trans                     &trans      &trans    &trans     &trans     &trans
             >;
         };
 
