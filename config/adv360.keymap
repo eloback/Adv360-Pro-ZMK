@@ -140,11 +140,11 @@
 
         default_layer {
             bindings = <
-&none  &none              &none           &none              &none            &none                   &mo 5                                                                                       &mo 5        &none                   &none        &none           &none              &none           &none
-&none  &kp Q              &kp W           &kp E              &kp R            &kp T                   &mt LC(X) LC(C)                                                                             &none        &kp Y                   &kp U        &kp I           &kp O              &kp P           &none
-&none  &kp A              &kp S           &kp D              &kp F            &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none        &hm RS(RA(RC(RGUI))) H  &kp J        &kp K           &kp L              &kp SEMICOLON   &none
-&none  &hm LGUI Z         &hm LEFT_ALT X  &hm LSHIFT C       &hm LCTRL V      &kp B                                                             &none                &kp DELETE                                &kp N                   &hm RCTRL M  &hm RGUI COMMA  &hm RIGHT_ALT DOT  &hm RGUI SLASH  &none
-&mo 4  &kp LS(LA(LCTRL))  &kp C_PP        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                          &lt 1 SPACE      &lt 2 ENTER              &kp TAB              &caps_word  &lt 2 BACKSPACE  &lt 2 SPACE                          &kp C_PREV   &kp C_NEXT      &none              &none           &mo 4
+&none  &kp LS(LG(LC(NUMBER_1)))  &none           &kp LS(LC(LG(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &none                   &mo 5                                                                                       &mo 5        &none                   &none        &none           &none              &none           &none
+&none  &kp Q                     &kp W           &kp E                     &kp R                     &kp T                   &mt LC(X) LC(C)                                                                             &none        &kp Y                   &kp U        &kp I           &kp O              &kp P           &none
+&none  &kp A                     &kp S           &kp D                     &kp F                     &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none        &hm RS(RA(RC(RGUI))) H  &kp J        &kp K           &kp L              &kp SEMICOLON   &none
+&none  &hm LGUI Z                &hm LEFT_ALT X  &hm LSHIFT C              &hm LCTRL V               &kp B                                                             &none                &kp DELETE                                &kp N                   &hm RCTRL M  &hm RGUI COMMA  &hm RIGHT_ALT DOT  &hm RGUI SLASH  &none
+&mo 4  &kp LS(LA(LCTRL))         &kp C_PP        &kp C_VOLUME_DOWN         &kp C_VOLUME_UP                                   &lt 1 SPACE      &lt 2 ENTER              &kp TAB              &caps_word  &lt 2 BACKSPACE  &lt 2 SPACE                          &kp C_PREV   &kp C_NEXT      &none              &none           &mo 4
             >;
         };
 
