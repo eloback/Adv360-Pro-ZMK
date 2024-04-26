@@ -198,7 +198,7 @@
 &none  &lt 3 Q                   &kp W               &kp E                     &kp R                     &kp T                   &mt LC(X) LC(C)                                                                             &none  &kp Y                   &kp U               &kp I               &kp O               &kp P               &none
 &none  &kp A                     &kp S               &kp D                     &kp F                     &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none  &hm RS(RA(RC(RGUI))) H  &kp J               &kp K               &kp L               &kp SEMICOLON       &none
 &none  &kp Z                     &kp X               &kp C                     &kp V                     &kp B                                                             &none                &none                               &kp N                   &kp M               &kp COMMA           &kp DOT             &kp FSLH            &none
-&mo 4  &kp LS(LA(LCTRL))         &kp C_PP            &kp C_VOLUME_DOWN         &kp C_VOLUME_UP                                   &lt 1 SPACE      &lt 2 ENTER              &kp TAB              &caps_word  &lt 2 BACKSPACE  &mo 2                          &kp C_PREV          &kp C_NEXT          &none               &none               &mo 4
+&mo 4  &kp LS(LA(LCTRL))         &kp C_PP            &kp C_VOLUME_DOWN         &kp C_VOLUME_UP                                   &lt 1 SPACE      &mo 2              &kp TAB              &caps_word  &none  &mo 2                          &kp C_PREV          &kp C_NEXT          &none               &none               &mo 4
             >;
         };
 
