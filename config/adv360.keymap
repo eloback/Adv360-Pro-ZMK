@@ -194,11 +194,11 @@
 
         default_layer {
             bindings = <
-&none  &kp LS(LG(LC(NUMBER_1)))  &kp LS(LC(LG(N2)))  &kp LS(LC(LG(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(LC(N5)))      &mo 5                                                                                       &mo 5  &kp LS(LG(LC(N6)))      &kp LS(LG(LC(N7)))  &kp LS(LC(LG(N8)))  &kp LS(LC(LG(N9)))  &kp LS(LC(LG(N0)))  &none
-&none  &lt 3 Q                   &kp W               &kp E                     &kp R                     &kp T                   &mt LC(X) LC(C)                                                                             &none  &kp Y                   &kp U               &kp I               &kp O               &kp P               &none
-&none  &kp A                     &kp S               &kp D                     &kp F                     &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none            &none  &hm RS(RA(RC(RGUI))) H  &kp J               &kp K               &kp L               &kp SEMICOLON       &none
-&none  &kp Z                     &kp X               &kp C                     &kp V                     &kp B                                                             &none                &none                               &kp N                   &kp M               &kp COMMA           &kp DOT             &kp FSLH            &none
-&mo 4  &kp LS(LA(LCTRL))         &kp C_PP            &kp C_VOLUME_DOWN         &kp C_VOLUME_UP                                   &lt 1 SPACE      &mo 2              &kp TAB              &caps_word  &none  &mo 2                          &kp C_PREV          &kp C_NEXT          &none               &none               &mo 4
+&none  &kp LS(LG(LC(NUMBER_1)))  &kp LS(LC(LG(N2)))  &kp LS(LC(LG(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(LC(N5)))      &mo 5                                                                             &mo 5  &kp LS(LG(LC(N6)))      &kp LS(LG(LC(N7)))  &kp LS(LC(LG(N8)))  &kp LS(LC(LG(N9)))  &kp LS(LC(LG(N0)))  &none
+&none  &lt 3 Q                   &kp W               &kp E                     &kp R                     &kp T                   &mt LC(X) LC(C)                                                                   &none  &kp Y                   &kp U               &kp I               &kp O               &kp P               &none
+&none  &kp A                     &kp S               &kp D                     &kp F                     &hm LS(LA(LC(LGUI))) G  &kp LC(V)        &kt LG(LS(PRINTSCREEN))  &kp PRINTSCREEN      &none       &none  &none  &hm RS(RA(RC(RGUI))) H  &kp J               &kp K               &kp L               &kp SEMICOLON       &none
+&none  &kp Z                     &kp X               &kp C                     &kp V                     &kp B                                                             &none                &none                     &kp N                   &kp M               &kp COMMA           &kp DOT             &kp FSLH            &none
+&mo 4  &kp LS(LA(LCTRL))         &kp C_PP            &kp C_VOLUME_DOWN         &kp C_VOLUME_UP                                   &sl 1            &sl 2                    &kp TAB              &caps_word  &none  &sl 2                          &kp C_PREV          &kp C_NEXT          &none               &none               &mo 4
             >;
         };
 
@@ -206,7 +206,7 @@
             bindings = <
 &none  &none             &none   &none   &none   &none              &none                                           &none   &none       &none       &none     &none          &none      &none
 &none  &kp GRAVE         &kp N7  &kp N8  &kp N9  &kp MINUS          &none                                           &none   &move_home  &move_end   &kp SQT   &kp BACKSLASH  &none      &none
-&mo 4  &kp N0            &kp N4  &kp N5  &kp N6  &kp EQUAL          &none   &none  &none      &none  &none          &none   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT      &kp LC(B)  &none
+&mo 4  &kp N0            &kp N4  &kp N5  &kp N6  &kp EQUAL          &none   &none  &none      &none  &none          &none   &kp LEFT    &kp DOWN    &kp UP    &kp RIGHT      &kp SPACE  &none
 &none  &kp LEFT_BRACKET  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET                 &none      &none                         &none       &move_down  &move_up  &none          &none      &none
 &none  &none             &none   &none   &none                      &trans  &none  &none      &none  &kp BACKSPACE  &trans              &none       &none     &none          &none      &none
             >;
@@ -215,7 +215,7 @@
         modifier_layer {
             bindings = <
 &trans  &trans      &trans      &trans       &trans        &trans                  &trans                                      &trans  &trans                  &trans         &trans       &trans           &trans      &trans
-&trans  &sl 3       &kp LC(Y)   &kp LC(Z)    &kp RET       &trans                  &trans                                      &trans  &kp LG(LS(LC(Y)))       &kp BACKSPACE  &trans       &trans           &none       &trans
+&trans  &sl 3       &kp LC(Y)   &kp LC(Z)    &kp RET       &trans                  &trans                                      &trans  &kp LG(LS(LC(Y)))       &kp BACKSPACE  &kp LC(B)    &trans           &none       &trans
 &trans  &hmsk LGUI  &hmsk LALT  &hmsk LCTRL  &hmsk LSHIFT  &hmsk LS(LA(LC(LGUI)))  &trans  &trans  &trans      &trans  &trans  &trans  &hmsk RS(RA(RC(RGUI)))  &hmsk RSHIFT   &hmsk RCTRL  &hmsk RIGHT_ALT  &hmsk RGUI  &trans
 &trans  &trans      &trans      &kp ESCAPE   &trans        &trans                                  &trans      &trans                  &trans                  &caps_word     &trans       &trans           &trans      &trans
 &trans  &trans      &trans      &trans       &trans                                &trans  &trans  &trans      &trans  &trans  &trans                          &trans         &trans       &trans           &trans      &trans
