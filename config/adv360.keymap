@@ -212,7 +212,7 @@
             >;
         };
 
-        navigation_layer {
+        modifier_layer {
             bindings = <
 &trans  &trans      &trans      &trans       &trans        &trans                  &trans                                      &trans  &trans                  &trans         &trans       &trans           &trans      &trans
 &trans  &sl 3       &kp LC(Y)   &kp LC(Z)    &kp RET       &trans                  &trans                                      &trans  &kp LG(LS(LC(Y)))       &kp BACKSPACE  &trans       &trans           &none       &trans
